@@ -1,33 +1,60 @@
 .App {
-  text-align: center;
+  max-width: 600px;
+  margin: 50px auto;
+  width: 90%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  margin-bottom: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form > label {
+  flex: 0 0 100%;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+form > div {
+  flex: 1 1 50%;
+}
+
+form > div {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+form > div > label {
+  margin-bottom: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:not([type='checkbox']),
+select {
+  margin-bottom: 15px;
+  width: 220px;
+}
+
+form > label:not(:first-of-type) {
+  margin-top: 30px;
+}
+
+.checkbox {
+  display: flex;
+}
+
+.checkbox input {
+  margin-right: 10px;
+}
+
+button {
+  border-radius: 2px;
+  padding: 10px 20px;
 }
